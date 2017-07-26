@@ -267,16 +267,16 @@ rate is low enough.
     security and privacy properties of a network.  Namely, the smaller
     the subnet size, the more feasible it becomes to perform IPv6
     address scans <xref target="RFC7707"/> <xref target="RFC7721"/>.
-    For some specific subnets, such as point to point links, this may be
-    less of an issue.</t>
+    For some specific subnets, such as point to point links, which may be
+    sparsely distributed this may be less of an issue.</t>
 
     <t>On the other hand, we assume that a number of IPv6
     implementations fail to enforce limits on the size of some of the
     data structures they employ for communicating with neighboring
     nodes, such as the Neighbor Cache.  In such cases, the use of
-    smaller subnets forces an operational limit on such data structures,
-    thus helping mitigate some pathological behaviors (such as Neighbor
-    Cache Exhaustion attacks).</t>
+    smaller subnets imposes an operational limit on cpu or use of data 
+    structures, thus helping mitigate some pathological behaviors 
+    (such as Neighbor Discovery and Cache Exhaustion attacks).</t>
 
     <!-- [fgont] Still need to add references here... e.g. to Joel's RFC -->
 
